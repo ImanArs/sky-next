@@ -45,8 +45,8 @@
             @apply lg:text-[11px] lg:line-clamp-6 lg:font-[400];
             @apply xl:text-[15px] xl:line-clamp-none xl:block xl:mb-0;
           }
-          button {
-            @apply bg-[#3A5FE1] text-[#fff] py-[10px] rounded-[10px] text-[15px] font-[700];
+          a {
+            @apply bg-[#3A5FE1] text-[#fff] py-[10px] px-[35%] rounded-[10px] text-[15px] font-[700];
             @apply sm:bg-[#3A5FE1] sm:text-[#fff] sm:py-[10px] sm:rounded-[10px] sm:text-[15px] sm:font-[700];
             @apply lg:bg-[#3A5FE1] lg:text-[#fff] lg:py-[10px] lg:rounded-[10px] lg:text-[15px] lg:font-[700];
           }

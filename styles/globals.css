@@ -30,6 +30,10 @@ a {
 body {
   @apply bg-[#f2f2f2]
 }
+input {
+  outline: none;
+}
+
 .content {
   @apply max-w-[1600px] m-auto ;
 }

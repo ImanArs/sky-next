@@ -16,7 +16,7 @@
     }
     &__form {
       form {
-        @apply w-[100%] flex flex-col;
+        @apply w-[100%] flex flex-col  text-[#fff];
         @apply sm:w-[290px] sm:flex sm:flex-col;
         @apply lg:w-[320px];
         @apply xl:w-[420px];
@@ -36,7 +36,7 @@
           }
         }
         button {
-          @apply mt-[40px] bg-white items-start py-[20px] px-[20px] w-[100%];
+          @apply mt-[40px] bg-white text-black items-start py-[20px] px-[20px] w-[100%];
         }
       }
     }

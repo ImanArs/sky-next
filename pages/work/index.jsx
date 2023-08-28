@@ -28,7 +28,7 @@ const Work = () => {
       </div>
       <Vacancy />
       <FormResume />
-      <div className={styles.tips}>
+      {/* <div className={styles.tips}>
         <h2>Посоветуй классного специалиста и получи до 50 000 тысяч сом</h2>
         <div className={styles.tips_wrapper}>
           <div className={styles.tips_wrapper_card}>
@@ -59,7 +59,7 @@ const Work = () => {
         <div>
           <button>Посоветовать специалиста </button>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

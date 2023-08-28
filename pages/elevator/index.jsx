@@ -62,7 +62,7 @@ const Elevator = () => {
             </div>
             <div className={styles.right__bottom}>
               <img src="/images/elevators/main_right.png" alt="" />
-              <button>Каталог</button>
+              <button><a href='#catalog'>Каталог</a></button>
             </div>
           </div>
         </div>

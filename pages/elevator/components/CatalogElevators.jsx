@@ -51,7 +51,7 @@ const CatalogElevators = () => {
   const filteredElevators = elevators.data?.filter(item => item.category == category)
 
   return (
-      <section className={styles.catalogElevator}>
+      <section className={styles.catalogElevator} id='catalog'>
         <h2>Каталог продукта</h2>
         <div className={styles.filter}>
           <button onClick={() => setCategory('passenger')} className={category == 'passenger' ? 'clicked' : ''}>Пассажирские</button>

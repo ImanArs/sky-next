@@ -55,7 +55,7 @@ export default function Home() {
                 
               }
               <div className={styles.right_overlay__text}>
-                <button><i>Подробнее</i><img src="/images/arrow.png" alt="" /></button> 
+                <div><a href='#aboutFabric'><button><i>Подробнее</i><img src="/images/arrow.png" alt="" /></button></a></div> 
                 <div className={styles.madeIn}>
                   <img src="/images/made-in.png" alt="" />
                   <strong>Made In Kyrgyzstan</strong>
@@ -103,7 +103,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className={styles.aboutFabric}>
+        <section className={styles.aboutFabric} id='aboutFabric'>
           <h2>О заводе</h2>
           <div className={styles.aboutFabric_wrapper}>
             <div className={styles.aboutFabric_wrapper__left}>

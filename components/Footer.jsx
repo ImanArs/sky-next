@@ -1,20 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../styles/Footer.module.scss'
 const Footer = () => {
+  const [question,setQuestion] = useState(null)
+
+  const handleQuestion = (e) => {
+    e.preventDefault();
+    console.log(question);
+  }
+  const change = (key, e) => {
+    setQuestion({...question, [key]: e.target.value})
+  }
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_wrapper}>
         <div className={styles.footer_wrapper__form}>
           <h3>Остались вопросы ?</h3>
-          <form action="">
-            <input type="text" placeholder='Имя' />
-            <input type="text" placeholder='Имя' />
-            <input type="text" placeholder='Вопрос' />
+          <form action="" onSubmit={e => handleQuestion(e)}>
+            <input type="text" placeholder='Имя' required onChange={e => change( 'name', e )} />
+            <input type="text" placeholder='Номер' required onChange={e => change( 'phone', e )} />
+            <input type="text" placeholder='Вопрос' required onChange={e => change( 'question', e )} />
             <div className={styles.form_checkbox}>
-              <input type="checkbox" name="" id="checkbox" />
+              <input type="checkbox" name="" id="checkbox" required onChange={e => change( 'checkbox', e )} />
               <label htmlFor="checkbox">Даю согласие на обработку <span>Персональных данных</span></label>
             </div>
-            <button>Оставить заявку</button>
+            <button type='submit'>Оставить заявку</button>
           </form>
         </div>
         <div className={styles.footer_wrapper__info}>
