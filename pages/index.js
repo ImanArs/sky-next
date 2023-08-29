@@ -55,7 +55,7 @@ export default function Home() {
                 
               }
               <div className={styles.right_overlay__text}>
-                <div><a href='#aboutFabric'><button><i>Подробнее</i><img src="/images/arrow.png" alt="" /></button></a></div> 
+                <a href='#aboutFabric'><button><i>Подробнее</i><img src="/images/arrow.png" alt="" /></button></a>
                 <div className={styles.madeIn}>
                   <img src="/images/made-in.png" alt="" />
                   <strong>Made In Kyrgyzstan</strong>
